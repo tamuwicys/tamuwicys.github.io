@@ -2079,6 +2079,10 @@ input, select, textarea {
 		.homepage #header {
 			height: 35em;
 		}
+/* sparkling logo*/
+		#sparkling_shield {
+			width: 50%;
+		}
 
 /* Logo */
 
