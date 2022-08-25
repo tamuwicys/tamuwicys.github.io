@@ -2081,8 +2081,7 @@ input, select, textarea {
 		}
 /* sparkling logo*/
 		#sparkling_shield {
-			width: 70%;
-
+			text-align: center;
 		}
 
 /* Logo */
