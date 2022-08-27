@@ -1473,7 +1473,7 @@ input, select, textarea {
 
 	section,
 	article {
-		margin: 0 0 4em 0;
+		margin: 0 0 0em 0;
 	}
 
 	section > :last-child,
@@ -1665,7 +1665,7 @@ input, select, textarea {
 		-ms-transition: all .25s ease-in-out;
 		transition: all .25s ease-in-out;
 		display: inline-block;
-		background: #444;
+		background: #8fce00 ;
 		text-align: center;
 		text-transform: uppercase;
 		font-weight: 700;
@@ -1687,7 +1687,7 @@ input, select, textarea {
 		input[type="reset"]:hover,
 		button:hover,
 		.button:hover {
-			background-color: #8fce00;
+			background-color: #699601;
 		}
 		
 
@@ -2034,13 +2034,13 @@ input, select, textarea {
 			}
 
 		.wrapper.style1 {
-			background: #413E45 url("images/overlay.png");
+			background: #282b34  url("images/overlay.png");
 			color: #eee;
 			color: rgba(255, 255, 255, 0.75);
 		}
 
 			.wrapper.style1 .title {
-				background: #413E45 url("images/overlay.png");
+				background: #282b34 url("images/overlay.png");
 				color: #fff;
 			}
 
@@ -2298,7 +2298,7 @@ input, select, textarea {
 	}
 
 		#highlights .highlight h3 {
-			color: #413E45;
+			color: #282b34;
 			margin: 0 0 0.75em 0;
 			font-size: 1.15em;
 			letter-spacing: 0.05em;
