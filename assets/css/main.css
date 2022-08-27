@@ -2839,7 +2839,7 @@ input, select, textarea {
 			button,
 			.button {
 				display: block;
-				width: 100%;
+				width: 60%;
 				font-size: 1em;
 				max-width: 30em;
 				margin: 0 auto;
