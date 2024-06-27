@@ -2093,7 +2093,7 @@ input, select, textarea {
 		justify-content: center;
 		position: relative;
 		height: 24em;
-		background: url("../../images/wicys_banner2.jpg") center center;
+		background: #0D0D0D;
 		background-size: cover;
 		padding: 0;
 	}
