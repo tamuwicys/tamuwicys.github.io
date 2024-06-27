@@ -1883,7 +1883,7 @@ input, select, textarea {
 		}
 
 		.feature-list h3 {
-			color: #8fce00 !important;
+			color: #73022C!important;
 			margin: -0.35em 0 0.75em 0;
 			font-size: 1.15em;
 			letter-spacing: 0.05em;
@@ -2034,13 +2034,13 @@ input, select, textarea {
 			}
 
 		.wrapper.style1 {
-			background: #282b34  url("images/overlay.png");
+			background: #0D0D0D  url("images/overlay.png");
 			color: #eee;
 			color: rgba(255, 255, 255, 0.75);
 		}
 
 			.wrapper.style1 .title {
-				background: #282b34 url("images/overlay.png");
+				background: #0D0D0D url("images/overlay.png");
 				color: #fff;
 			}
 
@@ -2049,11 +2049,11 @@ input, select, textarea {
 			}
 
 		.wrapper.style2 {
-			background: #fff;
+			background: #F2F2F2;
 		}
 
 			.wrapper.style2 .title {
-				background: #fff;
+				background:#F2F2F2;
 				color: #484d55;
 			}
 
@@ -2093,9 +2093,10 @@ input, select, textarea {
 		justify-content: center;
 		position: relative;
 		height: 24em;
-		background: #0D0D0D;
+		background: #400118;
 		background-size: cover;
 		padding: 0;
+		
 	}
 
 		#header:before {
@@ -2109,14 +2110,14 @@ input, select, textarea {
 		}
 
 		.homepage #header {
-			height: 35em;
+			height: 45em;
 		}
 /* sparkling logo*/
 		#sparkling_shield {
 			text-align: center;
 			padding-top: 8%;
 		}
-
+		
 /* Logo */
 
 	#logo {
