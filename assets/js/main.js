@@ -4,7 +4,7 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 document.addEventListener('DOMContentLoaded', function() {
-	const text = "Texas A&M University";
+	const text = "Women in Cybersecurity @ TAMU";
 	const speed = 100; // Typing speed in milliseconds
 
 	function typeWriter() {
@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	typeWriter();
 	});
 	document.addEventListener('DOMContentLoaded', function() {
-		const text = "About Us";
+		const text = "Meet Our Officers";
 		const speed = 100; // Typing speed in milliseconds
 	
 		function typeWriter() {
@@ -45,7 +45,21 @@ document.addEventListener('DOMContentLoaded', function() {
 	
 		typeWriter();
 		});
-	
+		document.addEventListener("DOMContentLoaded", function() {
+			const cards = document.querySelectorAll('.card');
+			const observer = new IntersectionObserver(entries => {
+				entries.forEach(entry => {
+					if (entry.isIntersecting) {
+						entry.target.style.opacity = 1;
+						entry.target.style.animationPlayState = 'running';
+					}
+				});
+			}, { threshold: 0.1 });
+		
+			cards.forEach(card => {
+				observer.observe(card);
+			});
+		});
 (function($) {
 
 	var	$window = $(window),

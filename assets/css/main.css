@@ -140,8 +140,9 @@ input, select, textarea {
 
 	h1, h2, h3, h4, h5, h6 {
 		font-weight: 700;
-		color: #484d55;
+		color: #F2F2F2;
 	}
+
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 			color: inherit;
@@ -2034,22 +2035,22 @@ input, select, textarea {
 			}
 
 		.wrapper.style1 {
-			background: #0D0D0D  url("images/overlay.png");
-			color: #eee;
-			color: rgba(255, 255, 255, 0.75);
+			background: #F2F2F2  url("images/overlay.png");
+			color: #0D0D0D;
+			color: #0D0D0D(255, 255, 255, 0.75);
 		}
 
 			.wrapper.style1 .title {
-				background: #0D0D0D url("images/overlay.png");
-				color: #fff;
+				background: #F2F2F2 url("images/overlay.png");
+				color: #0D0D0D;
 			}
 
 			.wrapper.style1 h1, .wrapper.style1 h2, .wrapper.style1 h3, .wrapper.style1 h4, .wrapper.style1 h5, .wrapper.style1 h6, .wrapper.style1 strong, .wrapper.style1 b, .wrapper.style1 a {
-				color: #fff;
+				color: #0D0D0D;
 			}
 
 		.wrapper.style2 {
-			background: #8C8C8C;
+			background:#8C8C8C ;
 		}
 
 			.wrapper.style2 .title {
@@ -2093,7 +2094,7 @@ input, select, textarea {
 		justify-content: center;
 		position: relative;
 		height: 24em;
-		background: #400118;
+		background: #BF88A2;
 		background-size: cover;
 		padding: 0;
 		

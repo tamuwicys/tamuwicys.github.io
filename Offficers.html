@@ -34,7 +34,7 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-            filter: blur(8px); /* Add blur effect to the background image */
+            /*filter: blur(2px); /* Add blur effect to the background image */
         }
 
         #header .overlay {
@@ -51,12 +51,6 @@
             color: white;
         }
 
-        #header h1 {
-            font-size: 3em;
-            margin: 0;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-        }
-
         /* Main content styles */
         .container {
             padding: 2em;
@@ -64,17 +58,24 @@
             margin-top: -50px; /* Adjust to overlap the header */
         }
 
+        
+        .row {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1em;
+            padding-top: 2em;
+        }
+
         .card {
             background-color: white;
             border: 2px solid black; /* Add black border */
             border-radius: 15px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            margin: 1em;
             padding: 1em;
             text-align: center;
-            flex: 1;
-            max-width: calc(50% - 2em); /* Adjust width to allow two cards per line */
             box-sizing: border-box; /* Include padding and border in the element's total width and height */
+            animation: floatIn 1s ease forwards;
+            opacity: 0; /* Initially hide the cards for the animation */
         }
 
         .card img {
@@ -88,12 +89,6 @@
             margin-right: auto;
         }
 
-        .row {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around; /* Add space between the cards */
-        }
-
         .card-title {
             font-size: 1.5em;
             margin-bottom: 0.5em;
@@ -103,15 +98,42 @@
             font-size: 1em;
             color: #666;
         }
-
-        .wrapper {
-            position: relative;
+        .card-links {
+            margin-top: 1em;
+            display: flex;
+            justify-content: center;
         }
 
-        .title {
-            text-align: center;
-            margin: 2em 0;
-            font-size: 2em;
+        .card-links a {
+            margin: 0 0.5em;
+        }
+
+        .card-links img.icon {
+            width: 24px;
+            height: 24px;
+            vertical-align: middle;
+        }
+
+    @keyframes floatIn {
+        from {
+            transform: translateY(20px);
+            opacity: 0;
+        }
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+            .title {
+                text-align: center;
+                margin: 2em 0;
+                font-size: 2em;
+            }
+            .overlay h1 {
+            font-family: 'Crimson Pro', serif; /* Use Fira Sans font */
+            font-size: 3em; /* Adjust font size */
+            margin: 0; /* Remove default margin */
         }
    </style>
 </head>
@@ -120,11 +142,11 @@
     <body>
         <section id="header">
             <!-- Header background image with blur -->
-            <img src="images/crystal.JPG" alt="Header Background Image">
+            <img src="images/A_most_visible_sitting2.JPG" alt="Header Background Image">
     
             <!-- Overlay with text -->
             <div class="overlay">
-                <h1>About Us</h1>
+                <h1 id = "typewriter-text2"></h1>
             </div>
         </section>
 
@@ -147,48 +169,52 @@
         </section>
 
         <!-- Main -->
-            <div class="container">
-                <!-- Content -->
-                <div id="content">
-                    <article class="box post">
-                        <header class="style1">
-                            <h2>Meet the Officer Team</h2>
-                        </header>
-                        <div class="row">
-                            <div class="card">
-                                <img class="card-img-top" src="images/adrianna.JPG" alt="Adrianna">
-                                <div class="card-body">
-
-                                    <h5 class="card-title">Adrianna</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <img class="card-img-top" src="images/crystal.JPG" alt="Crystal">
-                                <div class="card-body">
-                                    <h5 class="card-title">Crystal</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <img class="card-img-top" src="images/emmie.jpg" alt="Emmie Teng">
-                                <div class="card-body">
-                                    <h5 class="card-title">Emmie Teng</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <img class="card-img-top" src="images/betzaida.jpg" alt="Betzaida Perez">
-                                <div class="card-body">
-                                    <h5 class="card-title">Betzaida Perez</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <div class="container">
+            <!-- Content -->
+            <div id="content">
+                <article class="box post">
+                    <header class="style1"></header>
+                    <div class="row">
+                        <div class="card">
+                            <img class="card-img-top" src="images/adrianna.JPG" alt="Adrianna">
+                            <div class="card-body">
+                                <h5 class="card-title">Adrianna</h5>
+                                <p class="card-text">President</p>
+                                <div class="card-links">
+                                    <a href="https://www.linkedin.com/in/adrianna" target="_blank">
+                                        <img src="images/linkedin-icon.png" alt="LinkedIn" class="icon">
+                                    </a>
+                                    <a href="mailto:adrianna@example.com">
+                                        <img src="images/email-icon.png" alt="Email" class="icon">
+                                    </a>
                                 </div>
                             </div>
                         </div>
-                    </article>
-                </div>
+                        <div class="card">
+                            <img class="card-img-top" src="images/crystal.JPG" alt="Crystal">
+                            <div class="card-body">
+                                <h5 class="card-title">Crystal</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top" src="images/emmie.jpg" alt="Emmie Teng">
+                            <div class="card-body">
+                                <h5 class="card-title">Emmie Teng</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top" src="images/betzaida.jpg" alt="Betzaida Perez">
+                            <div class="card-body">
+                                <h5 class="card-title">Betzaida Perez</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
             </div>
-        </div>
+        </div>  
 
 
 
