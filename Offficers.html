@@ -7,14 +7,87 @@
 <html>
 
 <head>
-    <title>TAMU WiCyS</title>
+    <title>About US</title>
     <meta charset="utf-8" />
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/b475d8c80d.js" crossorigin="anonymous"></script>
+    <style>
+        #logo {
+            position: relative;
+            width: 100%;
+            height: 100vh; /* Adjust the height as needed */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url('images/Untitled design (3).png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
 
+        #logo h1 {
+            position: absolute;
+            color: white;
+            font-size: 3em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .container {
+            padding: 2em;
+            background-color: white;
+            margin-top: -50px; /* Adjust to overlap the header */
+        }
+
+        .card {
+            background-color: #F2F2F2;
+            border: 2px solid black;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 1em;
+            padding: 1em;
+            text-align: center;
+            flex: 1;
+            max-width: calc(50% - 2em); /* Adjust width to allow two cards per line */
+            box-sizing: border-box;
+        }
+
+        .card img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 1em;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .card-title {
+            font-size: 1.5em;
+            margin-bottom: 0.5em;
+        }
+
+        .card-text {
+            font-size: 1em;
+            color: #666;
+        }
+
+        .wrapper {
+            position: relative;
+        }
+
+        .title {
+            text-align: center;
+            margin: 2em 0;
+            font-size: 2em;
+        }
+        </style>
 </head>
 
 <body class="no-sidebar is-preload">
@@ -22,11 +95,10 @@
 
         <!-- Header -->
         <section id="header" class="wrapper">
-
+       
             <!-- Logo -->
             <div id="logo">
-                <img style="width: 30%;"src="images/WiCyS_logo-transparent.png" alt="TAMU Wicys"/>
-                <h1 style="font-size: 140%;">Texas A&M University</h1>
+                <h1 id = "typewriter-text2"></h1>
             </div>
 
             <!-- Nav -->
@@ -48,10 +120,7 @@
         </section>
 
         <!-- Main -->
-        <div id="main" class="wrapper style2">
-            <div class="title">About Us</br><a href="#main"><i class="fa-solid fa-angle-down fa-2xl" style="color: black;"></a></i></div>
             <div class="container">
-
                 <!-- Content -->
                 <div id="content">
                     <article class="box post">
@@ -59,42 +128,38 @@
                             <h2>Meet the Officer Team</h2>
                         </header>
                         <div class="row">
-                         <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="..." alt="Card image cap">
-                            <div class="card-body">
-                              <h5 class="card-title">Anna Slater</h5>
-                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <div class="card">
+                                <img class="card-img-top" src="images/anna.jpg" alt="Anna Slater">
+                                <div class="card-body">
+
+                                    <h5 class="card-title">Anna Slater</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
                             </div>
-                          </div>
-                        </br>
-                          <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="..." alt="Card image cap">
-                            <div class="card-body">
-                              <h5 class="card-title">Erin Lapko</h5>
-                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <div class="card">
+                                <img class="card-img-top" src="images/erin.jpg" alt="Erin Lapko">
+                                <div class="card-body">
+                                    <h5 class="card-title">Erin Lapko</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
                             </div>
-                          </div>
-                        </br>
-                        <div class="card" style="width: 18rem;">
-                          <img class="card-img-top" src="..." alt="Card image cap">
-                          <div class="card-body">
-                            <h5 class="card-title">Emmie Teng</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          </div>
+                            <div class="card">
+                                <img class="card-img-top" src="images/emmie.jpg" alt="Emmie Teng">
+                                <div class="card-body">
+                                    <h5 class="card-title">Emmie Teng</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top" src="images/betzaida.jpg" alt="Betzaida Perez">
+                                <div class="card-body">
+                                    <h5 class="card-title">Betzaida Perez</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                            </div>
                         </div>
-                        </br>
-                        <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="..." alt="Card image cap">
-                            <div class="card-body">
-                             <h5 class="card-title">Betzaida Perez</h5>
-                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            </div>
-                        </div>
-                      </div>
-                     
                     </article>
                 </div>
-
             </div>
         </div>
 
