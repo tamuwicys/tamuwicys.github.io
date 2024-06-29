@@ -14,27 +14,50 @@
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/b475d8c80d.js" crossorigin="anonymous"></script>
-    <style>
-        #logo {
+   <style>
+            body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Header styles */
+        #header {
             position: relative;
-            width: 100%;
             height: 100vh; /* Adjust the height as needed */
+            overflow: hidden;
+        }
+
+        #header img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: blur(8px); /* Add blur effect to the background image */
+        }
+
+        #header .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Overlay color with transparency */
             display: flex;
             justify-content: center;
             align-items: center;
-            background-image: url('images/Untitled design (3).png');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-        }
-
-        #logo h1 {
-            position: absolute;
+            text-align: center;
             color: white;
-            font-size: 3em;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
 
+        #header h1 {
+            font-size: 3em;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+        }
+
+        /* Main content styles */
         .container {
             padding: 2em;
             background-color: white;
@@ -42,8 +65,8 @@
         }
 
         .card {
-            background-color: #F2F2F2;
-            border: 2px solid black;
+            background-color: white;
+            border: 2px solid black; /* Add black border */
             border-radius: 15px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             margin: 1em;
@@ -51,7 +74,7 @@
             text-align: center;
             flex: 1;
             max-width: calc(50% - 2em); /* Adjust width to allow two cards per line */
-            box-sizing: border-box;
+            box-sizing: border-box; /* Include padding and border in the element's total width and height */
         }
 
         .card img {
@@ -60,12 +83,15 @@
             height: 150px;
             object-fit: cover;
             margin-bottom: 1em;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .row {
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-around;
+            justify-content: space-around; /* Add space between the cards */
         }
 
         .card-title {
@@ -87,19 +113,20 @@
             margin: 2em 0;
             font-size: 2em;
         }
-        </style>
+   </style>
 </head>
 
 <body class="no-sidebar is-preload">
-    <div id="page-wrapper">
-
-        <!-- Header -->
-        <section id="header" class="wrapper">
-       
-            <!-- Logo -->
-            <div id="logo">
-                <h1 id = "typewriter-text2"></h1>
+    <body>
+        <section id="header">
+            <!-- Header background image with blur -->
+            <img src="images/crystal.JPG" alt="Header Background Image">
+    
+            <!-- Overlay with text -->
+            <div class="overlay">
+                <h1>About Us</h1>
             </div>
+        </section>
 
             <!-- Nav -->
             <nav id="nav">
@@ -129,17 +156,17 @@
                         </header>
                         <div class="row">
                             <div class="card">
-                                <img class="card-img-top" src="images/anna.jpg" alt="Anna Slater">
+                                <img class="card-img-top" src="images/adrianna.JPG" alt="Adrianna">
                                 <div class="card-body">
 
-                                    <h5 class="card-title">Anna Slater</h5>
+                                    <h5 class="card-title">Adrianna</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                             </div>
                             <div class="card">
-                                <img class="card-img-top" src="images/erin.jpg" alt="Erin Lapko">
+                                <img class="card-img-top" src="images/crystal.JPG" alt="Crystal">
                                 <div class="card-body">
-                                    <h5 class="card-title">Erin Lapko</h5>
+                                    <h5 class="card-title">Crystal</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                             </div>
