@@ -130,7 +130,7 @@ input, select, textarea {
 	}
 
 	body, input, textarea, select {
-		font-family: 'Source Sans Pro', sans-serif;
+		font-family: 'Fira Sans', serif;
 		font-weight: 400;
 		color: #919499;
 		font-size: 14pt;
@@ -2050,11 +2050,11 @@ input, select, textarea {
 			}
 
 		.wrapper.style2 {
-			background:#8C8C8C ;
+			background:#D9BFCB;
 		}
 
 			.wrapper.style2 .title {
-				background:#8C8C8C;
+				background:#D9BFCB;
 				color: #0D0D0D;
 			}
 
