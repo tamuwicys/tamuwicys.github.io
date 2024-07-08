@@ -15,15 +15,46 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/b475d8c80d.js" crossorigin="anonymous"></script>
    <style>
+    .wrapper.style4 {
+			background: white url("images/overlay.png");
+			color: #0D0D0D;
+			color: #0D0D0D(255, 255, 255, 0.75);
+		}
+
+			.wrapper.style4 .title {
+				background: white url("images/overlay.png");
+				color: #0D0D0D;
+			}
             body {
             margin: 0;
             font-family: Arial, sans-serif;
         }
+        .wrapper.style4 .fa-angle-down {
+        color: #0D0D0D; /* Change to your desired color */
+}
+.wrapper.style5 {
+			background: #D9BFCB url("images/overlay.png");
+			color: #0D0D0D;
+			color: #0D0D0D(255, 255, 255, 0.75);
+		}
+
+			.wrapper.style5 .title {
+				background: #D9BFCB url("images/overlay.png");
+				color: #0D0D0D;
+			}
+            body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .wrapper.style5 .fa-angle-down {
+        color: #0D0D0D; /* Change to your desired color */
+}
+
 
         /* Header styles */
         #header {
             position: relative;
-            height: 100vh; /* Adjust the height as needed */
+            height: 90vh; /* Adjust the height as needed */
             overflow: hidden;
         }
 
@@ -69,7 +100,7 @@
         }
 
         .card {
-            background-color: white;
+            background-color: #F2F2F2;
             border: 4px solid #590202; /* Add black border */
             border-radius: 15px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -107,6 +138,7 @@
         .card-text2 {
             font-size: 1em;
             color: #A64E7E;
+            font-family: 'Fira Sans', serif;
         }
         .card-links {
             margin-top: 1em;
@@ -119,8 +151,8 @@
         }
 
         .card-links img.icon {
-            width: 24px;
-            height: 24px;
+            width: 30px;
+            height: 30px;
             vertical-align: middle;
         }
 
@@ -144,6 +176,106 @@
             font-family: 'Crimson Pro', serif; /* Use Fira Sans font */
             font-size: 3em; /* Adjust font size */
             margin: 0; /* Remove default margin */
+        }
+        /* Officer Alumni Section */
+        #officer-alumni {
+            padding: 2em 0;
+            background: #D9BFCB;
+        }
+
+        #officer-alumni .title {
+            text-align: center;
+            font-size: 1em;
+        }
+        #officer-alumni h3 {
+            text-align: center;
+            font-family: 'Crimson Pro', serif;
+            font-size: 30px;
+            margin-bottom: 10em;
+        }
+        #officer-alumni .container {
+        background-color: #D9BFCB; /* Add your desired background color here */
+        padding: 2em;
+        border-radius: 8px;
+        box-shadow: none;
+        }
+
+        #officer-alumni .semester {
+            margin-bottom: 2em;
+        }
+
+        #officer-alumni .semester h3 {
+            font-size: 1.5em;
+            margin: 2em 0 1em; 
+           
+        }
+
+        #officer-alumni .row {
+            display: flex;
+            flex-wrap: wrap;
+            
+            background-color: #D9BFCB; /* Add your desired background color here */
+            padding: 1em;
+            border-radius: 8px;
+        }
+
+        .small-card {
+            background: #fff;
+            border: 2px solid #590202;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin: 0.1em;
+            padding: 1em;
+            width: calc(20% - 1em)
+        }
+
+        .small-card-body {
+            text-align: center;
+        }
+
+        .small-card-title {
+            font-size: 1.2em;
+            margin-bottom: 0.5em;
+        }
+
+        .small-card-title {
+            font-size: 1.4em;
+            margin-bottom: 0.2em;
+            color: black;
+            font-family: 'Crimson Pro', serif;
+        }
+
+        .small-card-text1 {
+            font-size: 1.2em;
+            color: #666;
+            margin-bottom: 0.2em;
+            font-family: 'Fira Sans', serif;
+        }
+        .small-card-text2 {
+            font-size: 0.8em;
+            margin-bottom: 0.6em;
+            color: #A64E7E;
+            font-family: 'Fira Sans', serif;
+        }
+
+        .small-card-links .icon {
+            width: 24px;
+            height: 24px;
+            margin: 0 0.5em;
+            vertical-align: middle;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .small-card {
+                width: calc(50% - 2em);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .small-card {
+                width: calc(100% - 2em);
+            }
         }
    </style>
 </head>
@@ -181,7 +313,9 @@
 
         </section>
 
-        <!-- Main -->
+        <!--Current Officers-->
+        <section id="intro" class="wrapper style4">
+        <div class="title">Meet Our Officers</br><a href="#intro"><i class="fa-solid fa-angle-down fa-2xl"></a></i></div>
         <div class="container">
             <!-- Content -->
             <div id="content">
@@ -335,9 +469,96 @@
                     </div>
                 </article>
             </div>
-        </div>  
-
-
+        </div>
+    </div>
+        <!-- Officer Alumni -->
+        <section id="officer-alumni" class="wrapper style5">
+            <div class="title">Officer Alumni</br><a href="#intro"><i class="fa-solid fa-angle-down fa-2xl"></a></i></div>
+            <div class="container">
+                <div class="semester">
+                    <h3>Spring 2023</h3>
+                    <div class="row">
+                        <div class="small-card">
+                            <div class="small-card-body">
+                                <h5 class="small-card-title">Alumni Name 1</h5>
+                                <p class="small-card-text1">Former Role</p>
+                                <p class="small-card-text2">Graduation Year</p>
+                                <div class="small-card-links">
+                                    <a href="https://www.linkedin.com" target="_blank">
+                                        <img src="images/Linkedin Icon.png" alt="LinkedIn" class="icon">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="small-card">
+                            <div class="small-card-body">
+                                <h5 class="small-card-title">Alumni Name 2</h5>
+                                <p class="small-card-text1">Former Role</p>
+                                <p class="small-card-text2">Graduation Year</p>
+                                <div class="small-card-links">
+                                    <a href="https://www.linkedin.com" target="_blank">
+                                        <img src="images/Linkedin Icon.png" alt="LinkedIn" class="icon">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="small-card">
+                            <div class="small-card-body">
+                                <h5 class="small-card-title">Alumni Name 2</h5>
+                                <p class="small-card-text1">Former Role</p>
+                                <p class="small-card-text2">Graduation Year</p>
+                                <div class="small-card-links">
+                                    <a href="https://www.linkedin.com" target="_blank">
+                                        <img src="images/Linkedin Icon.png" alt="LinkedIn" class="icon">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="small-card">
+                            <div class="small-card-body">
+                                <h5 class="small-card-title">Alumni Name 2</h5>
+                                <p class="small-card-text1">Former Role</p>
+                                <p class="small-card-text2">Graduation Year</p>
+                                <div class="small-card-links">
+                                    <a href="https://www.linkedin.com" target="_blank">
+                                        <img src="images/Linkedin Icon.png" alt="LinkedIn" class="icon">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="semester">
+                    <h3>Fall 2022</h3>
+                    <div class="row">
+                        <div class="small-card">
+                            <div class="small-card-body">
+                                <h5 class="small-card-title">Alumni Name 3</h5>
+                                <p class="small-card-text1">Former Role</p>
+                                <p class="small-card-text2">Graduation Year</p>
+                                <div class="small-card-links">
+                                    <a href="https://www.linkedin.com" target="_blank">
+                                        <img src="images/Linkedin Icon.png" alt="LinkedIn" class="icon">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="small-card">
+                            <div class="small-card-body">
+                                <h5 class="small-card-title">Alumni Name 4</h5>
+                                <p class="small-card-text1">Former Role</p>
+                                <p class="small-card-text2">Graduation Year</p>
+                                <div class="small-card-links">
+                                    <a href="https://www.linkedin.com" target="_blank">
+                                        <img src="images/Linkedin Icon.png" alt="LinkedIn" class="icon">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>        
 
         <!-- Footer -->
         <section id="footer" class="wrapper">

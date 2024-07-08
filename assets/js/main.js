@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	typeWriter();
 	});
 document.addEventListener('DOMContentLoaded', function() {
-		const text = "Meet Our Officers";
+		const text = "About Us";
 		const speed = 100; // Typing speed in milliseconds
 	
 		function typeWriter() {
