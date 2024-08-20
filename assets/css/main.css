@@ -2266,25 +2266,28 @@ input, select, textarea {
 /* Intro */
 
 	#intro {
-		padding-bottom: 8em;
+		padding-bottom: 2em;
 		text-align: center;
 	}
 
 		#intro p.style1 {
-			font-size: 1.5em;
+			font-size: 2em;
 			letter-spacing: 0.075em;
+			font-weight: 700;
+			font-family: 'Crimson Pro', serif;
 		}
 
 		#intro p.style2 {
-			font-weight: 700;
+			font-weight: ;
 			color: #fff;
 			border-radius: 0.35em;
 			box-shadow: inset 0px 0px 1px 1px rgba(255, 255, 255, 0.25);
-			font-size: 2.3em;
+			font-size:1.6em;
 			letter-spacing: 0.075em;
 			line-height: 1.35em;
 			padding: 1em 0 1em 0;
 			margin-bottom: 1em;
+			font-family: 'Crimson Pro', serif;
 		}
 
 			#intro p.style2 a {
@@ -2326,7 +2329,7 @@ input, select, textarea {
 /* Footer */
 
 	#footer {
-		background: #260112; url("images/overlay.png");
+		background: #413E45; url("images/overlay.png");
 		color: #F2F2F2;
 		color: rgba(255, 255, 255, 0.5);
 		padding-bottom: 6em;
@@ -2393,7 +2396,7 @@ input, select, textarea {
 			}
 
 		#footer .title {
-			background: #40011E; url("images/overlay.png");
+			background: #413E45; url("images/overlay.png");
 			color: #eee;
 		}
 
