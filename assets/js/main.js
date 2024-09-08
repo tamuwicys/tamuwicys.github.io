@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', function() {
 			});
 		});
 	document.addEventListener('DOMContentLoaded', function() {
-			const text = "Become a Member";
+			const text = "Become A Member Today";
 			const speed = 100; // Typing speed in milliseconds
 		
 			function typeWriter() {
