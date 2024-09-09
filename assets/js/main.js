@@ -102,6 +102,27 @@ document.addEventListener('DOMContentLoaded', function() {
 			
 				typeWriter();
 				});
+				document.addEventListener('DOMContentLoaded', function() {
+					const text = "Upcoming Events";
+					const speed = 100; // Typing speed in milliseconds
+				
+					function typeWriter() {
+						const container = document.getElementById('typewriter-text5');
+						let i = 0;
+				
+						function type() {
+						if (i < text.length) {
+							container.textContent += text.charAt(i);
+							i++;
+							setTimeout(type, speed);
+						}
+						}
+				
+						type();
+					}
+				
+					typeWriter();
+					});
 (function($) {
 
 	var	$window = $(window),

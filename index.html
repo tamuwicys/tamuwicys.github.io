@@ -101,8 +101,9 @@ li {
     
 }
 body {
-    background: url("images/overlay.png") no-repeat center center fixed;
+    background: white url("images/overlay.png");
 }
+
 
 h8 {
     Color: white!important;
@@ -110,6 +111,9 @@ h8 {
 	font-size: 1.5em;
 	letter-spacing: 0.05em;
     font-weight: 500;
+}
+.parent-container {
+    background-color: blue;
 }
     </style>
 
@@ -130,14 +134,21 @@ h8 {
               
 
             <!-- Nav -->
+            
             <nav id="nav">
                 <ul>
-                    <li class="current"><a href="index.html">Home</a></li>
+                    <li class = "Current"><a href="index.html">Home</a></li>
                     <li><a href="become-a-member.html">Join</a></li>
                     <li><a href="calendar.html">Calendar</a></li>
                     <li><a href="gallary.html">Photo Library</a></li>
-                    <li><a href="Offficers.html">about</a></li>
-                    <li><a href="Sponsers.html">sponsors</a></li>
+                    <li>
+                        <a href="#">About Us</a>
+                        <ul>
+                            <li><a href="offficers.html">Our Team</a></li>
+                            <li><a href="alumni.html">Our Alumni</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="sponsers.html">sponsors</a></li>
 
                 </ul>
             </nav>
