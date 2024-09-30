@@ -63,6 +63,69 @@
             /*margin-left: 2em;*/
             text-align: left;
         }
+        .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    padding: 10px;
+}
+
+.general-meeting-photos, .social-photos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    gap: 20px; /* Space between images */
+}
+
+.general-meeting-photos img, .social-photos img {
+    width: 100%; /* Full width of the grid cell */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    grid-template-rows: repeat(3, 200px); /* 3 equal rows with a fixed height */
+    gap: 15px; /* Space between images */
+    margin: 40px auto; /* Increased vertical margin and centered horizontally */
+    width: 80%; /* Set width to control the overall size */
+    max-width: 1200px; /* Set a maximum width to prevent it from being too wide */
+}
+
+.container img {
+    width: 100%; /* Full width of the grid cell */
+    height: 100%; /* Full height of the grid cell */
+    object-fit: cover; /* Maintain aspect ratio while covering the area */
+    border-radius: 8px; /* Optional rounded corners */
+}
+
+/* Specific areas for images */
+.large {
+    grid-column: span 2; /* Span two columns */
+    grid-row: span 2; /* Span two rows */
+}
+
+.medium {
+    grid-column: span 1; /* Span one column */
+    grid-row: span 1; /* Span one row */
+}
+
+.small {
+    grid-column: span 1; /* Span one column */
+    grid-row: span 1; /* Span one row */
+}
+
+/* Optional: Adding media queries for more responsiveness */
+@media (max-width: 600px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+        grid-template-rows: repeat(4, 150px); /* Adjust row heights */
+    }
+}
+
+
+
+
         
 </style>
 <body class="no-sidebar is-preload"></body>
@@ -100,12 +163,31 @@
    
         <!-- Main -->
         <section id="main" class="wrapper style1">
-            <div class="title">Photo Library </br><a href="#main"><i class="fa-solid fa-angle-down fa-2xl"></a></i></div>
-            <div class="container">
-             <h2>General Meetings</h2>   
-
+            <div class="title">Photo Library</br><a href="#main"><i class="fa-solid fa-angle-down fa-2xl"></a></i></div>
+            
+            <!-- Container for General Meetings -->
+            <div class="container general-meeting-photos">
+                <!--<h2>General Meetings</h2>-->
+                <img src="Meeting Photos/Collab Meeting.jpg" alt="Image 1" class="large">
+                <img src="Meeting Photos/Meeting.jpg" alt="Image 2" class="medium">
+                <img src="Meeting Photos/Meeting(1).jpg" alt="Image 3" class="small">
+                <img src="Meeting Photos/Week 2 Meeting 2.jpg" alt="Image 4" class="medium">
+                <img src="Meeting Photos/Week 3 Meeting 3.jpg" alt="Image 5" class="small">
+                <img src="Meeting Photos/Week 3 Meeting 3.jpg" alt="Image 5" class="small">
+            </div>
+            
+            <!-- Container for Socials -->
+            <div class="container social-photos" style="margin-top: 20px;">
+                <!--<h2>Socials</h2>-->
+                <img src="Social Photos\Week 3 Social 5.jpg" alt="Image 1" class="large">
+                <img src="Social Photos\Valentines day.jpg" alt="Image 2" class="medium">
+                <img src="Social Photos\Week 2 Social 3.jpg" alt="Image 3" class="small">
+                <img src="Social Photos\Week 1 Social.jpg" alt="Image 4" class="medium">
+                <img src="Social Photos\Social.jpg" alt="Image 5" class="small">
             </div>
         </section>
+        
+        
 
 
         <!-- Footer -->
