@@ -1,0 +1,10 @@
+.style1index {
+    font-family: 'Times New Roman', serif; /* Use your desired font */
+    font-size: 36px; /* Adjust font size */
+    font-weight: bold; /* Make the text bold */
+    text-align: center; /* Center the text */
+    line-height: 1.2; /* Adjust the line height to reduce space between lines */
+    margin-top: 0; /* Remove or reduce top margin */
+    margin-bottom: 0; /* Remove or reduce bottom margin */
+    letter-spacing: 0.1px; /* Adjust spacing between characters */
+}
