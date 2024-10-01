@@ -124,7 +124,7 @@ document.addEventListener('DOMContentLoaded', function() {
 					typeWriter();
 					});
 					document.addEventListener('DOMContentLoaded', function() {
-						const text = "Gallary";
+						const text = "Gallery";
 						const speed = 100; // Typing speed in milliseconds
 					
 						function typeWriter() {
