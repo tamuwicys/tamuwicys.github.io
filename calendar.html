@@ -46,6 +46,26 @@
         #typewriter-text5 {
     font-size: 2rem; /* Adjust the size as needed */
 }
+.iframe-container {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically (if needed) */
+    height: 100vh; /* Adjust as needed */
+}
+h3 {
+    margin-bottom: auto;
+    margin-top: auto;
+}
+.container > *:first-child {
+    margin-top: 0; /* Adjust top margin as needed */
+    margin-bottom: 10px; /* Adjust bottom margin as needed */
+    padding: 0px;
+}
+.section {
+    padding: 0px 0px;
+}
+
+
 
 
 
@@ -92,10 +112,15 @@
                     <div class="feature-list">
                             <div class="col-6 col-12-medium">
                                 <section>
-                                    <h3 style="text-align: center;"><em>Note: This calendar is synced with our Discord events system</em></h3>
-                                    <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23F9F7F8&ctz=America%2FChicago&mode=MONTH&title=WiCys%20meetings%2C%20CTFs%20and%20TAMU%20schedule&src=Y19zaTVjamZtcXNrZ2JlaGVobWJyMDdpZ3BtY0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=Y19kZm9xN3ZpbnFxNXVybG9uMGI5cGw1NWJxa0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%2354b225&color=%236c0d86" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+                                    <!--<h3 style="text-align: center;"><em>Note: This calendar is synced with our Discord events system</em></h3>-->
+                     
+                                    <div class="iframe-container">
+                                        <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23F9F7F8&ctz=America%2FChicago&mode=MONTH&title=WiCys%20meetings%2C%20CTFs%20and%20TAMU%20schedule&src=Y19zaTVjamZtcXNrZ2JlaGVobWJyMDdpZ3BtY0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=Y19kZm9xN3ZpbnFxNXVybG9uMGI5cGw1NWJxa0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%2354b225&color=%236c0d86" style="border-width:0" width="1000" height="700" frameborder="0" scrolling="no"></iframe>
+                                    </div>
+                                    
                                 </div>
                                 </br>
+                                <h3 style="text-align: center;"><em>Note: This calendar is synced with our Discord events system</em></h3>
                                 </section>
                             </div>
                     </div>
