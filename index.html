@@ -8,7 +8,7 @@
 
 <head>
     <title>TAMU WiCys</title>
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="images\transparent_background.png">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
@@ -22,8 +22,9 @@
         
         #header {
             position: relative;
-            height: 100vh; /* Adjust the height as needed */
+            height: 80%; /* Adjust the height as needed */
             overflow: hidden;
+            box-sizing: content-box;
         }
 
         #header img {
@@ -35,7 +36,7 @@
             object-fit: contain;
             /*filter: blur(2px); /* Add blur effect to the background image */
         }
-
+       
         #header .overlay {
             position: absolute;
             top: 0;
@@ -66,6 +67,9 @@
 
     font-size: 20px;
     font-family: 'Crimson Pro', serif;
+}
+#typewriter-text {
+    line-height: 1.5;
 }
 
 li {

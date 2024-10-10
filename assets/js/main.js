@@ -4,26 +4,40 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 document.addEventListener('DOMContentLoaded', function() {
-	const text = "Women in Cybersecurity @ TAMU";
+	const text = [
+		"Texas A&M",
+		"Women In Cybersecurity",
+		"(College Station)"
+	];
 	const speed = 100; // Typing speed in milliseconds
 
 	function typeWriter() {
 		const container = document.getElementById('typewriter-text');
 		let i = 0;
+		let line = 0;
 
 		function type() {
-		if (i < text.length) {
-			container.textContent += text.charAt(i);
-			i++;
-			setTimeout(type, speed);
-		}
+			if (line < text.length) {
+				if (i < text[line].length) {
+					container.innerHTML += text[line].charAt(i);
+					i++;
+					setTimeout(type, speed);
+				} else {
+					container.innerHTML += '<br>'; // Move to the next line
+					line++;
+					i = 0;
+					setTimeout(type, speed);
+				}
+			}
 		}
 
 		type();
 	}
 
 	typeWriter();
-	});
+});
+
+
 	document.addEventListener('DOMContentLoaded', function() {
 		const text = "Our Alumni";
 		const speed = 100; // Typing speed in milliseconds
