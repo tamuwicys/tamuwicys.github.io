@@ -19,42 +19,129 @@
 <style>
     /* Header styles */
  /* Header styles */
-        
-        #header {
-            position: relative;
-            height: 80%; /* Adjust the height as needed */
-            overflow: hidden;
-            box-sizing: content-box;
-        }
+    /* Existing header styles */
+#header {
+    position: relative;
+    height: 80%; /* Adjust the height as needed */
+    overflow: hidden;
+    box-sizing: content-box;
+}
 
-        #header img {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-            /*filter: blur(2px); /* Add blur effect to the background image */
-        }
-       
-        #header .overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.5); /* Overlay color with transparency */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            color: white;
-        }
-        .overlay h1 {
-        font-family: 'Crimson Pro', serif; /* Use Fira Sans font */
-        font-size: 3em; /* Adjust font size */
-        margin: 0; /* Remove default margin */
+#header img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+#header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Overlay color with transparency */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.overlay h1 {
+    font-family: 'Crimson Pro', serif;
+    font-size: 3em;
+    margin: 0;
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; /* Center items vertically */
+    background-color: black; /* Changed to black */
+    padding: 1rem 1rem; /* Increased vertical padding around the navbar */
+    height: 90px; /* Increased height of the navbar */
+    z-index: 10; /* Keep it on top of the header */
+}
+
+.logo {
+    width: 90px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    position: absolute; /* Ensure logo is fixed to the left */
+    left: 1rem; /* Adjust to your preference */
+    margin-right: 1rem; /* Space between logo and links */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    font-family: 'Crimson Pro', serif;
+    margin-left: auto; /* Ensure links are aligned to the right */
+    align-items: center; /* Center align items in the nav links */
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: white; /* Link color */
+    text-decoration: none; /* Remove underline */
+    font-size: 18px; /* Font size */
+    font-weight: bold; /* Bold text */
+    padding: 0.5rem 1rem; /* Adjust vertical padding for more space */
+    transition: background-color 0.3s ease, padding 0.3s ease; /* Add padding to transition */
+    display: flex; /* Use flexbox to center content */
+    align-items: center; /* Center vertically within the link */
+    height: 100%; /* Ensures the anchor takes full height of the nav */
+}
+
+/* Add hover effect */
+.nav-links a:hover {
+    background-color: #72002B; /* Highlight color on hover */
+    border-radius: 10px; /* Round edges of the hover background */
+}
+
+/* Dropdown menu styling */
+.nav-links li ul {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.9); /* Adjusted dropdown background to black */
+    padding: 1rem;
+    list-style: none;
+    margin: 0;
+    border-radius: 5px;
+}
+
+.nav-links li:hover ul {
+    display: block;
+}
+
+.nav-links li ul li {
+    margin: 0;
+}
+
+/* Responsive design for mobile */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        gap: 1rem;
     }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+
         .title {
             text-align: center;
             margin: 2em 0;
@@ -132,32 +219,33 @@ h8 {
     
             <!-- Overlay with text -->
             <div class="overlay">
-                <h1 id = "typewriter-text"></h1>
+                <h1 id="typewriter-text"></h1>
             </div>
         </section>
-              
 
-            <!-- Nav -->
-            
-            <nav id="nav">
-                <ul>
-                    <li class = "Current"><a href="index.html">Home</a></li>
-                    <li><a href="become-a-member.html">Join</a></li>
-                    <li><a href="calendar.html">Calendar</a></li>
-                    <li><a href="gallary.html">Photo Library</a></li>
-                    <li>
-                        <a href="#">About Us</a>
-                        <ul>
-                            <li><a href="offficers.html">Our Team</a></li>
-                            <li><a href="alumni.html">Our Alumni</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="sponsers.html">sponsors</a></li>
+        <!-- Nav -->
+        <nav id="nav" class="navbar">
+            <img src="images/transparent_background.png" alt="Logo" class="logo"> <!-- Logo Image -->
+            <ul class="nav-links">
+                <li class="Current"><a href="index.html">Home</a></li>
+                <li><a href="become-a-member.html">Join</a></li>
+                <li><a href="calendar.html">Calendar</a></li>
+                <li><a href="gallary.html">Photo Library</a></li>
+                <li>
+                    <a href="#">About Us</a>
+                    <ul>
+                        <li><a href="offficers.html">Our Team</a></li>
+                        <li><a href="alumni.html">Our Alumni</a></li>
+                    </ul>
+                </li>
+                <li><a href="sponsers.html">Sponsors</a></li>
+            </ul>
+        </nav>
 
-                </ul>
-            </nav>
+    </div>
+</body>
 
-        </section>
+                    </header>
 
         <!-- Intro -->
         <section id="intro" class="wrapper style1">
