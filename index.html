@@ -25,6 +25,7 @@
     height: 80%; /* Adjust the height as needed */
     overflow: hidden;
     box-sizing: content-box;
+    margin-top: auto;
 }
 
 #header img {
@@ -56,35 +57,45 @@
     margin: 0;
 }
 
+/* Keyframe animation for floating up */
+
+
+
 .navbar {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center; /* Center items vertically */
     background-color: black; /* Changed to black */
-    padding: 1rem 1rem; /* Increased vertical padding around the navbar */
-    height: 90px; /* Increased height of the navbar */
+    height: 80px; /* Increased height of the navbar */
     z-index: 10; /* Keep it on top of the header */
 }
 
+/* Apply floating animation to the logo */
 .logo {
     width: 90px; /* Adjust width as needed */
     height: auto; /* Maintain aspect ratio */
     position: absolute; /* Ensure logo is fixed to the left */
     left: 1rem; /* Adjust to your preference */
     margin-right: 1rem; /* Space between logo and links */
+    animation: floatUp 1s ease-out forwards; /* Add animation */
+    animation-delay: 0.2s; /* Delay to start the animation */
 }
 
+/* Links container animation */
 .nav-links {
     list-style: none;
     display: flex;
     gap: 2rem;
     font-family: 'Crimson Pro', serif;
     margin-left: auto; /* Ensure links are aligned to the right */
+    height: 100%;
     align-items: center; /* Center align items in the nav links */
+    animation: floatUp 1s ease-out forwards; /* Add animation */
+    animation-delay: 0.5s; /* Delay to start the animation after the logo */
 }
 
 .nav-links li {
@@ -93,20 +104,25 @@
 
 .nav-links a {
     color: white; /* Link color */
-    text-decoration: none; /* Remove underline */
+    text-decoration: none; /* Remove underline initially */
     font-size: 18px; /* Font size */
     font-weight: bold; /* Bold text */
-    padding: 0.5rem 1rem; /* Adjust vertical padding for more space */
-    transition: background-color 0.3s ease, padding 0.3s ease; /* Add padding to transition */
     display: flex; /* Use flexbox to center content */
     align-items: center; /* Center vertically within the link */
     height: 100%; /* Ensures the anchor takes full height of the nav */
+    transition: color 0.3s ease, text-decoration-color 0.3s ease; /* Smooth color change */
 }
 
-/* Add hover effect */
 .nav-links a:hover {
-    background-color: #72002B; /* Highlight color on hover */
-    border-radius: 10px; /* Round edges of the hover background */
+    color: #72002B; /* Change text color on hover */
+    text-decoration: underline; /* Add underline on hover */
+    text-decoration-color: #72002B; /* Set the underline color to match */
+}
+
+.nav-links a span {
+    padding-top: 1rem; /* Add padding above the text */
+    padding-left: 1rem; /* Horizontal padding */
+    padding-right: 1rem;
 }
 
 /* Dropdown menu styling */
@@ -140,6 +156,7 @@
         align-items: flex-start;
     }
 }
+
 
 
         .title {
@@ -227,20 +244,21 @@ h8 {
         <nav id="nav" class="navbar">
             <img src="images/transparent_background.png" alt="Logo" class="logo"> <!-- Logo Image -->
             <ul class="nav-links">
-                <li class="Current"><a href="index.html">Home</a></li>
-                <li><a href="become-a-member.html">Join</a></li>
-                <li><a href="calendar.html">Calendar</a></li>
-                <li><a href="gallary.html">Photo Library</a></li>
+                <li class="Current"><a href="index.html"><span>Home</span></a></li>
+                <li><a href="become-a-member.html"><span>Join</span></a></li>
+                <li><a href="calendar.html"><span>Calendar</span></a></li>
+               
                 <li>
-                    <a href="#">About Us</a>
+                    <a href="#"><span>About Us</span></a>
                     <ul>
-                        <li><a href="offficers.html">Our Team</a></li>
-                        <li><a href="alumni.html">Our Alumni</a></li>
+                        <li><a href="offficers.html"><span>Our Team</span></a></li>
+                        <li><a href="alumni.html"><span>Our Alumni</span></a></li>
                     </ul>
                 </li>
-                <li><a href="sponsers.html">Sponsors</a></li>
+                
             </ul>
         </nav>
+        
 
     </div>
 </body>

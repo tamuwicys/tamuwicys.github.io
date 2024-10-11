@@ -2941,3 +2941,100 @@ input, select, textarea {
 						}
 
 	}
+	.navbar {
+		position: absolute; /* Change to absolute positioning */
+		top: 0; /* Aligns the navbar at the top of the page */
+		left: 0;
+		width: 100%;
+		display: flex;
+		justify-content: space-between; /* Space between logo and links */
+		align-items: center; /* Center items vertically */
+		background-color: black; /* Navbar background color */
+		height: 80px; /* Height of the navbar */
+		z-index: 10; /* Keeps it on top of other content */
+		padding: 0 20px; /* Adds horizontal padding */
+	}
+	
+	/* Floating animation for the logo */
+	.logo {
+		width: 90px; /* Logo width */
+		height: auto; /* Maintain aspect ratio */
+		margin-right: 1rem; /* Space between logo and links */
+		animation: floatUp 1s ease-out forwards; /* Add animation */
+		animation-delay: 0.2s; /* Delay to start the animation */
+	}
+	
+	/* Links container */
+	.nav-links {
+		list-style: none; /* Removes bullet points */
+		display: flex; /* Flexbox layout for links */
+		gap: 2rem; /* Space between links */
+		font-family: 'Crimson Pro', serif; /* Font family */
+		margin-left: auto; /* Aligns links to the right */
+		align-items: center; /* Center align items in the nav links */
+		height: 100%; /* Ensures the container takes full height */
+		animation: floatUp 1s ease-out forwards; /* Add animation */
+		animation-delay: 0.5s; /* Delay for links animation */
+	}
+	
+	.nav-links li {
+		display: inline; /* Inline display for list items */
+	}
+	
+	.nav-links a {
+		color: white; /* Link color */
+		text-decoration: none; /* Remove underline initially */
+		font-size: 18px; /* Font size */
+		font-weight: bold; /* Bold text */
+		display: flex; /* Flexbox for centering content */
+		align-items: center; /* Center vertically */
+		height: 100%; /* Ensures the anchor takes full height of the nav */
+		transition: color 0.3s ease, text-decoration-color 0.3s ease; /* Smooth color change */
+	}
+	
+	.nav-links a:hover {
+		color: #72002B; /* Change text color on hover */
+		text-decoration: underline; /* Underline on hover */
+		text-decoration-color: #72002B; /* Underline color */
+	}
+	
+	/* Padding for the link text */
+	.nav-links a span {
+		padding-top: 1rem; /* Add padding above the text */
+		padding-left: 1rem; /* Horizontal padding */
+		padding-right: 1rem;
+	}
+	
+	/* Dropdown menu styling */
+	.nav-links li ul {
+		display: none; /* Hide dropdown by default */
+		position: absolute; /* Positioning for dropdown */
+		background-color: rgba(0, 0, 0, 0.9); /* Dropdown background color */
+		padding: 1rem; /* Padding for dropdown items */
+		list-style: none; /* Removes bullet points */
+		margin: 0; /* Remove default margin */
+		border-radius: 5px; /* Rounded corners */
+	}
+	
+	.nav-links li:hover ul {
+		display: block; /* Show dropdown on hover */
+	}
+	
+	.nav-links li ul li {
+		margin: 0; /* No margin for dropdown items */
+	}
+	
+	/* Responsive design for mobile */
+	@media (max-width: 768px) {
+		.nav-links {
+			flex-direction: column; /* Stack links vertically */
+			gap: 1rem; /* Space between links */
+		}
+	
+		.navbar {
+			flex-direction: column; /* Stack navbar items vertically */
+			align-items: flex-start; /* Align items to the left */
+		}
+	}
+	
+	

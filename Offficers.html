@@ -106,7 +106,8 @@
     animation: floatIn 1s ease forwards;
     opacity: 0; /* Initially hide the cards for the animation */
     height: 500px; /* Set a fixed height for all cards */
-    width: 350px
+    flex: 0 0 calc(33.33% - 2em); /* Allow for three cards per row, accounting for gaps */
+    margin-bottom: 2em; /* Ensure space between rows */
 }
 
 .card .profile-img {
@@ -133,7 +134,8 @@
             font-size: 2em;
             margin-bottom: 0.5em;
             color: black;
-            font-family: 'Crimson Pro', serif;
+            font-family: 'Fira Sans', serif;
+            font-weight: 500;
         }
 
         .card-text1 {
@@ -257,6 +259,7 @@
         font-weight: 500;
         font-family: 'Crimson Pro', serif;
     }
+    
 p {
     font-size: 20px;
     font-family: 'Crimson Pro', serif;
@@ -320,21 +323,21 @@ p {
 
             <!-- Nav -->
              <!-- Nav -->
-             <nav id="nav">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="become-a-member.html">Join</a></li>
-                    <li><a href="calendar.html">Calendar</a></li>
-                    <li><a href="gallary.html">Photo Library</a></li>
+             <nav id="nav" class="navbar">
+                <img src="images/transparent_background.png" alt="Logo" class="logo"> <!-- Logo Image -->
+                <ul class="nav-links">
+                    <li><a href="index.html"><span>Home</span></a></li>
+                    <li><a href="become-a-member.html"><span>Join</span></a></li>
+                    <li><a href="calendar.html"><span>Calendar</span></a></li>
+                   
                     <li>
-                        <a href="#">About Us</a>
+                        <a href="#"><span>About Us</span></a>
                         <ul>
-                            <li><a href="offficers.html">Our Team</a></li>
-                            <li><a href="alumni.html">Our Alumni</a></li>
+                            <li class = "Current"><a href="offficers.html"><span>Our Team</span></a></li>
+                            <li><a href="alumni.html"><span>Our Alumni</span></a></li>
                         </ul>
                     </li>
-                    <li><a href="sponsers.html">sponsors</a></li>
-
+                    
                 </ul>
             </nav>
 
@@ -343,7 +346,7 @@ p {
         <!--Current Officers-->
         <section id="intro" class="wrapper style4">
         <div class="title">Meet Our Team</br><a href="#intro"><i class="fa-solid fa-angle-down fa-2xl"></a></i></div>
-        <div class="container">
+        <div class="container" class="popup">
             <!-- Content -->
             <div id="content">
                 <!--<p3><u>Our Team</u></p>

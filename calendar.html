@@ -19,7 +19,7 @@
 <style>
     #header {
             position: relative;
-            height: 60vh; /* Set height to 50% of the viewport height */
+            height: 90vh; /* Set height to 50% of the viewport height */
             overflow: hidden;
         }
 
@@ -65,7 +65,9 @@ h3 {
 .section {
     padding: 0px 0px;
 }
-
+.wrapper.style1 {
+    height: auto;
+}
 
 
 
@@ -85,21 +87,21 @@ h3 {
                 </div>
             </div>
         </section>
-        <nav id="nav">
-            <ul>
-                <li class = "Current"><a href="index.html">Home</a></li>
-                <li><a href="become-a-member.html">Join</a></li>
-                <li><a href="calendar.html">Calendar</a></li>
-                <li><a href="gallary.html">Photo Library</a></li>
+        <nav id="nav" class="navbar">
+            <img src="images/transparent_background.png" alt="Logo" class="logo"> <!-- Logo Image -->
+            <ul class="nav-links">
+                <li><a href="index.html"><span>Home</span></a></li>
+                <li class="Current"><a href="become-a-member.html"><span>Join</span></a></li>
+                <li><a href="calendar.html"><span>Calendar</span></a></li>
+                
                 <li>
-                    <a href="#">About Us</a>
+                    <a href="#"><span>About Us</span></a>
                     <ul>
-                        <li><a href="offficers.html">Our Team</a></li>
-                        <li><a href="alumni.html">Our Alumni</a></li>
+                        <li><a href="offficers.html"><span>Our Team</span></a></li>
+                        <li><a href="alumni.html"><span>Our Alumni</span></a></li>
                     </ul>
                 </li>
-                <li><a href="sponsers.html">sponsors</a></li>
-
+                
             </ul>
         </nav>
 
