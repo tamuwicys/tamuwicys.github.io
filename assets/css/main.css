@@ -130,9 +130,9 @@ input, select, textarea {
 	}
 
 	body, input, textarea, select {
-		font-family: 'Source Sans Pro', sans-serif;
+		font-family: 'Fira Sans', serif;
 		font-weight: 400;
-		color: #919499;
+		color: black;
 		font-size: 14pt;
 		line-height: 1.75em;
 		letter-spacing: 0.025em;
@@ -140,8 +140,9 @@ input, select, textarea {
 
 	h1, h2, h3, h4, h5, h6 {
 		font-weight: 700;
-		color: #484d55;
+		color: #F2F2F2;
 	}
+
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 			color: inherit;
@@ -154,7 +155,7 @@ input, select, textarea {
 		-ms-transition: color .25s ease-in-out;
 		transition: color .25s ease-in-out;
 		text-decoration: underline;
-		color: #717479;
+		color: black;
 	}
 
 		a:hover {
@@ -1665,7 +1666,7 @@ input, select, textarea {
 		-ms-transition: all .25s ease-in-out;
 		transition: all .25s ease-in-out;
 		display: inline-block;
-		background: #8fce00 ;
+		background: #730237 ;
 		text-align: center;
 		text-transform: uppercase;
 		font-weight: 700;
@@ -1687,7 +1688,7 @@ input, select, textarea {
 		input[type="reset"]:hover,
 		button:hover,
 		.button:hover {
-			background-color: #699601;
+			background-color: #730237;
 		}
 		
 
@@ -1705,7 +1706,7 @@ input, select, textarea {
 		input[type="reset"].style1,
 		button.style1,
 		.button.style1 {
-			background: #413E45 url("images/overlay.png");
+			background: #0D0D0D url("images/overlay.png");
 			color: #fff;
 		}
 
@@ -1714,7 +1715,7 @@ input, select, textarea {
 			input[type="reset"].style1:hover,
 			button.style1:hover,
 			.button.style1:hover {
-				background-color: #8fce00;
+				background-color: #730237;
 			}
 
 			input[type="button"].style1:active,
@@ -1722,7 +1723,7 @@ input, select, textarea {
 			input[type="reset"].style1:active,
 			button.style1:active,
 			.button.style1:active {
-				background-color: #8fce00;
+				background-color: #730237;
 			}
 
 		input[type="button"].style2,
@@ -1883,7 +1884,7 @@ input, select, textarea {
 		}
 
 		.feature-list h3 {
-			color: #8fce00 !important;
+			color: #73022C!important;
 			margin: -0.35em 0 0.75em 0;
 			font-size: 1.15em;
 			letter-spacing: 0.05em;
@@ -2026,7 +2027,7 @@ input, select, textarea {
 				transform: scaleX(-1);
 				content: '';
 				position: absolute;
-				bottom: -38px;
+				bottom: -3px;
 				right: -35px;
 				width: 35px;
 				height: 38px;
@@ -2034,27 +2035,28 @@ input, select, textarea {
 			}
 
 		.wrapper.style1 {
-			background: #282b34  url("images/overlay.png");
-			color: #eee;
-			color: rgba(255, 255, 255, 0.75);
+			background: #F2F2F2  url("images/overlay.png");
+			color: #0D0D0D;
+			color: #0D0D0D(255, 255, 255, 0.75);
+			height: 40em;
 		}
 
 			.wrapper.style1 .title {
-				background: #282b34 url("images/overlay.png");
-				color: #fff;
+				background: #F2F2F2 url("images/overlay.png");
+				color: #0D0D0D;
 			}
 
 			.wrapper.style1 h1, .wrapper.style1 h2, .wrapper.style1 h3, .wrapper.style1 h4, .wrapper.style1 h5, .wrapper.style1 h6, .wrapper.style1 strong, .wrapper.style1 b, .wrapper.style1 a {
-				color: #fff;
+				color: #0D0D0D;
 			}
 
 		.wrapper.style2 {
-			background: #fff;
+			background:#D9BFCB;
 		}
 
 			.wrapper.style2 .title {
-				background: #fff;
-				color: #484d55;
+				background:#D9BFCB;
+				color: #0D0D0D;
 			}
 
 		.wrapper.style3 {
@@ -2093,9 +2095,10 @@ input, select, textarea {
 		justify-content: center;
 		position: relative;
 		height: 24em;
-		background: url("../../images/wicys_banner2.jpg") center center;
+		background: #BF88A2;
 		background-size: cover;
 		padding: 0;
+		
 	}
 
 		#header:before {
@@ -2109,14 +2112,14 @@ input, select, textarea {
 		}
 
 		.homepage #header {
-			height: 35em;
+			height: 42em;
 		}
 /* sparkling logo*/
 		#sparkling_shield {
 			text-align: center;
 			padding-top: 8%;
 		}
-
+		
 /* Logo */
 
 	#logo {
@@ -2125,14 +2128,29 @@ input, select, textarea {
 		position: relative;
 		top: 1.5em;
 	}
-
-		#logo h1 {
-			font-weight: 900;
-			text-transform: uppercase;
-			color: #fff;
-			font-size: 2em;
-			letter-spacing: 0.25em;
+	#logo h1 {
+		font-weight: 900;
+		text-transform: uppercase;
+		color: #fff;
+		font-size: 2em;
+		letter-spacing: 0.25em;
+		overflow: hidden; /* Ensures the text doesn't overflow its container */
+		white-space: nowrap; /* Prevents text from wrapping */
+		border-right: .15em solid black; /* Creates the blinking cursor effect */
+	  }
+	  
+	  .typewriter-text {
+		animation: typing 8s steps(40, end); /* Adjust duration and steps as needed */
+	  }
+	  
+	  @keyframes typing {
+		from {
+		  width: 0;
 		}
+		to {
+		  width: 100%;
+		}
+	  }
 
 		#logo p {
 			color: #eee;
@@ -2143,131 +2161,34 @@ input, select, textarea {
 			letter-spacing: 0.2em;
 			font-size: 0.9em;
 		}
-
+*/
 /* Nav */
-
-	#nav {
-		position: absolute;
-		display: block;
-		top: 2.5em;
-		left: 0;
-		width: 100%;
-		text-align: center;
-	}
-
-		#nav > ul {
-			display: inline-block;
-			border-radius: 0.35em;
-			box-shadow: inset 0px 0px 1px 1px rgba(255, 255, 255, 0.25);
-			padding: 0 1.5em 0 1.5em;
-		}
-
-			#nav > ul > li {
-				display: inline-block;
-				text-align: center;
-				padding: 0 1.5em 0 1.5em;
-			}
-
-				#nav > ul > li > ul {
-					display: none;
-				}
-
-				#nav > ul > li > a, #nav > ul > li > span {
-					display: block;
-					color: #eee;
-					color: rgba(255, 255, 255, 0.75);
-					text-transform: uppercase;
-					text-decoration: none;
-					font-size: 0.7em;
-					letter-spacing: 0.25em;
-					height: 5em;
-					line-height: 5em;
-					-moz-transition: all .25s ease-in-out;
-					-webkit-transition: all .25s ease-in-out;
-					-o-transition: all .25s ease-in-out;
-					-ms-transition: all .25s ease-in-out;
-					transition: all .25s ease-in-out;
-					outline: 0;
-				}
-
-				#nav > ul > li:hover > a {
-					color: #fff;
-				}
-
-				#nav > ul > li.active > a, #nav > ul > li.active > span {
-					color: #fff;
-				}
-
-	.dropotron {
-		background: #222835 url("images/overlay.png");
-		background-color: rgba(44, 50, 63, 0.925);
-		padding: 1.25em 1em 1.25em 1em;
-		border-radius: 0.35em;
-		box-shadow: inset 0px 0px 1px 1px rgba(255, 255, 255, 0.25);
-		min-width: 12em;
-		text-align: left;
-		margin-top: -1.25em;
-		margin-left: -1px;
-		list-style: none;
-	}
-
-		.dropotron.level-0 {
-			margin-top: -1px;
-			margin-left: 0;
-			border-top-left-radius: 0;
-			border-top-right-radius: 0;
-		}
-
-		.dropotron a, .dropotron span {
-			-moz-transition: all .25s ease-in-out;
-			-webkit-transition: all .25s ease-in-out;
-			-ms-transition: all .25s ease-in-out;
-			transition: all .25s ease-in-out;
-			display: block;
-			color: #eee;
-			color: rgba(255, 255, 255, 0.75);
-			text-transform: uppercase;
-			text-decoration: none;
-			font-size: 0.7em;
-			letter-spacing: 0.25em;
-			border-top: solid 1px rgba(255, 255, 255, 0.15);
-			line-height: 3em;
-		}
-
-		.dropotron li {
-			padding-left: 0;
-		}
-
-			.dropotron li:first-child a, .dropotron li:first-child span {
-				border-top: 0;
-			}
-
-			.dropotron li:hover > a, .dropotron li:hover > span {
-				color: #fff;
-			}
 
 /* Intro */
 
 	#intro {
-		padding-bottom: 8em;
+		padding-bottom: 2em;
 		text-align: center;
 	}
 
 		#intro p.style1 {
-			font-size: 1.5em;
+			font-size: 2em;
 			letter-spacing: 0.075em;
+			font-weight: 700;
+			font-family: 'Crimson Pro', serif;
 		}
 
 		#intro p.style2 {
-			font-weight: 700;
+			font-weight: ;
 			color: #fff;
 			border-radius: 0.35em;
 			box-shadow: inset 0px 0px 1px 1px rgba(255, 255, 255, 0.25);
-			font-size: 2.3em;
+			font-size:1.6em;
 			letter-spacing: 0.075em;
 			line-height: 1.35em;
 			padding: 1em 0 1em 0;
 			margin-bottom: 1em;
+			font-family: 'Crimson Pro', serif;
 		}
 
 			#intro p.style2 a {
@@ -2309,14 +2230,14 @@ input, select, textarea {
 /* Footer */
 
 	#footer {
-		background: #282b34 url("images/overlay.png");
-		color: #eee;
+		background: #0D0D0D; url("images/overlay.png");
+		color: #F2F2F2;
 		color: rgba(255, 255, 255, 0.5);
 		padding-bottom: 6em;
 	}
 
 		#footer h1, #footer h2, #footer h3, #footer h4, #footer h5, #footer h6, #footer strong, #footer b, #footer a {
-			color: #fff;
+			color: #F2F2F2;
 		}
 
 		#footer hr {
@@ -2376,7 +2297,7 @@ input, select, textarea {
 			}
 
 		#footer .title {
-			background: #282b34 url("images/overlay.png");
+			background: #0D0D0D; url("images/overlay.png");
 			color: #eee;
 		}
 
@@ -2387,7 +2308,7 @@ input, select, textarea {
 		}
 
 			#footer header.style1 h2 {
-				color: #fff;
+				color: #282b34;
 			}
 
 			#footer header.style1 .p {
@@ -2679,8 +2600,8 @@ input, select, textarea {
 						line-height: 38px;
 						text-align: center;
 						color: rgba(255, 255, 255, 0.75);
-						background-color: rgba(92, 95, 103, 0.5);
-						border-radius: 0.25em;
+						background-color: black;
+						border-radius: 0.25em;s
 					}
 
 					#titleBar .toggle:active:before {
@@ -2708,7 +2629,7 @@ input, select, textarea {
 				top: 0;
 				width: 275px;
 				z-index: 10002;
-				background: #242730 url("images/overlay.png");
+				background: black url("images/overlay.png");
 				box-shadow: inset -3px 0px 4px 0px rgba(0, 0, 0, 0.1);
 			}
 
@@ -2724,6 +2645,11 @@ input, select, textarea {
 					line-height: 44px;
 					border-top: solid 1px rgba(255, 255, 255, 0.05);
 					margin: 0 15px 0 15px;
+				}
+				#navPanel a:hover {
+					color: #72002B; /* Change text color on hover */
+					text-decoration: underline; /* Underline on hover */
+					text-decoration-color: #72002B; /* Underline color */
 				}
 
 					#navPanel .link:first-child {
@@ -3020,3 +2946,100 @@ input, select, textarea {
 						}
 
 	}
+	.navbar {
+		position: absolute; /* Change to absolute positioning */
+		top: 0; /* Aligns the navbar at the top of the page */
+		left: 0;
+		width: 100%;
+		display: flex;
+		justify-content: space-between; /* Space between logo and links */
+		align-items: center; /* Center items vertically */
+		background-color: black; /* Navbar background color */
+		height: 80px; /* Height of the navbar */
+		z-index: 10; /* Keeps it on top of other content */
+		padding: 0 20px; /* Adds horizontal padding */
+	}
+	
+	/* Floating animation for the logo */
+	.logo {
+		width: 90px; /* Logo width */
+		height: auto; /* Maintain aspect ratio */
+		margin-right: 1rem; /* Space between logo and links */
+		animation: floatUp 1s ease-out forwards; /* Add animation */
+		animation-delay: 0.2s; /* Delay to start the animation */
+	}
+	
+	/* Links container */
+	.nav-links {
+		list-style: none; /* Removes bullet points */
+		display: flex; /* Flexbox layout for links */
+		gap: 2rem; /* Space between links */
+		font-family: 'Crimson Pro', serif; /* Font family */
+		margin-left: auto; /* Aligns links to the right */
+		align-items: center; /* Center align items in the nav links */
+		height: 100%; /* Ensures the container takes full height */
+		animation: floatUp 1s ease-out forwards; /* Add animation */
+		animation-delay: 0.5s; /* Delay for links animation */
+	}
+	
+	.nav-links li {
+		display: inline; /* Inline display for list items */
+	}
+	
+	.nav-links a {
+		color: white; /* Link color */
+		text-decoration: none; /* Remove underline initially */
+		font-size: 18px; /* Font size */
+		font-weight: bold; /* Bold text */
+		display: flex; /* Flexbox for centering content */
+		align-items: center; /* Center vertically */
+		height: 100%; /* Ensures the anchor takes full height of the nav */
+		transition: color 0.3s ease, text-decoration-color 0.3s ease; /* Smooth color change */
+	}
+	
+	.nav-links a:hover {
+		color: #72002B; /* Change text color on hover */
+		text-decoration: underline; /* Underline on hover */
+		text-decoration-color: #72002B; /* Underline color */
+	}
+	
+	/* Padding for the link text */
+	.nav-links a span {
+		padding-top: 1rem; /* Add padding above the text */
+		padding-left: 1rem; /* Horizontal padding */
+		padding-right: 1rem;
+	}
+	
+	/* Dropdown menu styling */
+	.nav-links li ul {
+		display: none; /* Hide dropdown by default */
+		position: absolute; /* Positioning for dropdown */
+		background-color: rgba(0, 0, 0, 0.9); /* Dropdown background color */
+		padding: 1rem; /* Padding for dropdown items */
+		list-style: none; /* Removes bullet points */
+		margin: 0; /* Remove default margin */
+		border-radius: 5px; /* Rounded corners */
+	}
+	
+	.nav-links li:hover ul {
+		display: block; /* Show dropdown on hover */
+	}
+	
+	.nav-links li ul li {
+		margin: 0; /* No margin for dropdown items */
+	}
+	
+	/* Responsive design for mobile */
+	@media (max-width: 768px) {
+		.nav-links {
+			flex-direction: column; /* Stack links vertically */
+			gap: 1rem; /* Space between links */
+		}
+	
+		.navbar {
+			flex-direction: column; /* Stack navbar items vertically */
+			align-items: flex-start; /* Align items to the left */
+		}
+	}
+	
+	
