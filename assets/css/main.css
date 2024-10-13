@@ -132,7 +132,7 @@ input, select, textarea {
 	body, input, textarea, select {
 		font-family: 'Fira Sans', serif;
 		font-weight: 400;
-		color: #919499;
+		color: black;
 		font-size: 14pt;
 		line-height: 1.75em;
 		letter-spacing: 0.025em;
@@ -2600,8 +2600,8 @@ input, select, textarea {
 						line-height: 38px;
 						text-align: center;
 						color: rgba(255, 255, 255, 0.75);
-						background-color: rgba(92, 95, 103, 0.5);
-						border-radius: 0.25em;
+						background-color: black;
+						border-radius: 0.25em;s
 					}
 
 					#titleBar .toggle:active:before {
@@ -2629,7 +2629,7 @@ input, select, textarea {
 				top: 0;
 				width: 275px;
 				z-index: 10002;
-				background: #242730 url("images/overlay.png");
+				background: black url("images/overlay.png");
 				box-shadow: inset -3px 0px 4px 0px rgba(0, 0, 0, 0.1);
 			}
 
@@ -2645,6 +2645,11 @@ input, select, textarea {
 					line-height: 44px;
 					border-top: solid 1px rgba(255, 255, 255, 0.05);
 					margin: 0 15px 0 15px;
+				}
+				#navPanel a:hover {
+					color: #72002B; /* Change text color on hover */
+					text-decoration: underline; /* Underline on hover */
+					text-decoration-color: #72002B; /* Underline color */
 				}
 
 					#navPanel .link:first-child {
