@@ -3,7 +3,182 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
+document.addEventListener('DOMContentLoaded', function() {
+	const text = [
+		"Texas A&M",
+		"Women In Cybersecurity",
+		"(College Station)"
+	];
+	const speed = 100; // Typing speed in milliseconds
 
+	function typeWriter() {
+		const container = document.getElementById('typewriter-text');
+		let i = 0;
+		let line = 0;
+
+		function type() {
+			if (line < text.length) {
+				if (i < text[line].length) {
+					container.innerHTML += text[line].charAt(i);
+					i++;
+					setTimeout(type, speed);
+				} else {
+					container.innerHTML += '<br>'; // Move to the next line
+					line++;
+					i = 0;
+					setTimeout(type, speed);
+				}
+			}
+		}
+
+		type();
+	}
+
+	typeWriter();
+});
+
+
+	document.addEventListener('DOMContentLoaded', function() {
+		const text = "Our Alumni";
+		const speed = 100; // Typing speed in milliseconds
+	
+		function typeWriter() {
+			const container = document.getElementById('typewriter-text8');
+			let i = 0;
+	
+			function type() {
+			if (i < text.length) {
+				container.textContent += text.charAt(i);
+				i++;
+				setTimeout(type, speed);
+			}
+			}
+	
+			type();
+		}
+	
+		typeWriter();
+		});
+document.addEventListener('DOMContentLoaded', function() {
+		const text = "About Us";
+		const speed = 100; // Typing speed in milliseconds
+	
+		function typeWriter() {
+			const container = document.getElementById('typewriter-text2');
+			let i = 0;
+	
+			function type() {
+			if (i < text.length) {
+				container.textContent += text.charAt(i);
+				i++;
+				setTimeout(type, speed);
+			}
+			}
+	
+			type();
+		}
+	
+		typeWriter();
+		});
+		document.addEventListener("DOMContentLoaded", function() {
+			const cards = document.querySelectorAll('.card');
+			const observer = new IntersectionObserver(entries => {
+				entries.forEach(entry => {
+					if (entry.isIntersecting) {
+						entry.target.style.opacity = 1;
+						entry.target.style.animationPlayState = 'running';
+					}
+				});
+			}, { threshold: 0.1 });
+		
+			cards.forEach(card => {
+				observer.observe(card);
+			});
+		});
+	document.addEventListener('DOMContentLoaded', function() {
+			const text = "Become A Member Today!";
+			const speed = 100; // Typing speed in milliseconds
+		
+			function typeWriter() {
+				const container = document.getElementById('typewriter-text3');
+				let i = 0;
+		
+				function type() {
+				if (i < text.length) {
+					container.textContent += text.charAt(i);
+					i++;
+					setTimeout(type, speed);
+				}
+				}
+		
+				type();
+			}
+		
+			typeWriter();
+			});
+			document.addEventListener('DOMContentLoaded', function() {
+				const text = "Our Mission";
+				const speed = 100; // Typing speed in milliseconds
+			
+				function typeWriter() {
+					const container = document.getElementById('typewriter-text4');
+					let i = 0;
+			
+					function type() {
+					if (i < text.length) {
+						container.textContent += text.charAt(i);
+						i++;
+						setTimeout(type, speed);
+					}
+					}
+			
+					type();
+				}
+			
+				typeWriter();
+				});
+				document.addEventListener('DOMContentLoaded', function() {
+					const text = "Upcoming Events";
+					const speed = 100; // Typing speed in milliseconds
+				
+					function typeWriter() {
+						const container = document.getElementById('typewriter-text5');
+						let i = 0;
+				
+						function type() {
+						if (i < text.length) {
+							container.textContent += text.charAt(i);
+							i++;
+							setTimeout(type, speed);
+						}
+						}
+				
+						type();
+					}
+				
+					typeWriter();
+					});
+					document.addEventListener('DOMContentLoaded', function() {
+						const text = "Gallery";
+						const speed = 100; // Typing speed in milliseconds
+					
+						function typeWriter() {
+							const container = document.getElementById('typewriter-text7');
+							let i = 0;
+					
+							function type() {
+							if (i < text.length) {
+								container.textContent += text.charAt(i);
+								i++;
+								setTimeout(type, speed);
+							}
+							}
+					
+							type();
+						}
+					
+						typeWriter();
+						});
 (function($) {
 
 	var	$window = $(window),
